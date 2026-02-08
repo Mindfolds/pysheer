@@ -1,0 +1,31 @@
+﻿[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysheer"
+version = "1.0.0"
+description = "PySheer - Sistema de Análise Arquitetural"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "PyFolds Team", email = "team@pyfolds.org"}]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8+",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+dependencies = [
+    "click>=8.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+pysheer = "pysheer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/pyfolds/pysheer"
